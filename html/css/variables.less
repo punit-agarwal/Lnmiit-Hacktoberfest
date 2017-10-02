@@ -1,0 +1,135 @@
+//media Queries
+@full-hd:   ~"(min-width: 1400px)";
+@desktop:   ~"(min-width: 1200px)";
+@laptop:   ~"(min-width:992px)";
+@tablet:    ~"(min-width: 768px)";
+@mobile:    ~"(min-width: 240px) and (max-width: 719px)";
+
+
+//Cores
+@color1: #04cd8f ;
+@color2: #029669;
+@color3: #3E4651;
+@color4: @color3;
+//@color4: #3b658a;
+@bgcolor: #B6C6AD;
+@bgmenu: #111;
+@text-color: #555;
+@negative-color: #fff;
+@border-color: #ccc;
+
+@color1l: #04cd8f + #444 ;
+
+//RGBA
+@rgba1: rgba(54, 49, 68, 0.7);
+@rgba2: rgba(0, 0, 0, 0.99);
+
+@rgba-color1: rgba(18, 151, 112, 0.8);
+@rgba-color3: rgba(2, 3, 4, 0.8);
+
+
+
+//Sizes
+@menu-width: 250px;
+
+.color1 {
+  color: @color1;
+}
+
+.color2 {
+  color: @color2;
+}
+
+.color3 {
+  color: @color3;
+}
+
+.color1l {
+  color: #04cd8f;
+}
+
+//Fonts
+.font1 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font2 {
+  font-family: 'Hind', sans-serif;
+}
+
+//CSS3 Animations
+@anitime: .2s;
+@easing: ease-in-out;
+
+.anima1 {
+  -webkit-transition: all @anitime @easing;
+  -moz-transition: all @anitime @easing;
+  transition: all @anitime @easing;
+}
+
+.anima-none {
+  -webkit-transition: none!important;
+    -moz-transition: none!important;
+    transition: none!important;
+}
+
+.anima (@anima) {
+  -webkit-transition: all @anima ease-in-out;
+    -moz-transition: all @anima ease-in-out;
+    transition: all @anima ease-in-out;
+}
+
+.animaLinear (@anima) {
+  -webkit-transition: all @anima linear;
+    -moz-transition: all @anima linear;
+    transition: all @anima linear;
+}
+
+
+.anima-transform {
+  -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+}
+
+
+
+//Other Mixins
+@border-radius1: 10px;
+
+.border-radius(@border-radius){
+  -webkit-border-radius: @border-radius;
+  -moz-border-radius: @border-radius;
+  border-radius: @border-radius;
+}
+
+.background-cover, .bg-cover {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.responsive-image {
+  width: 100%;
+}
+
+.no-pl {
+  padding-left: 0 !important;
+}
+
+.no-pr {
+  padding-right: 0 !important;
+}
+
+.clean-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li {
+    padding-left: 0;
+    margin-left: 0;
+  }
+}
